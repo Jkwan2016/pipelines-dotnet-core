@@ -6,8 +6,10 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+pool: 
+   name: Local
+   demands:
+    - Agent.Name -equals Dell7040
 
 variables:
   buildConfiguration: 'Release'
